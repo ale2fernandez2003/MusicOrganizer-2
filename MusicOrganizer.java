@@ -53,10 +53,12 @@ public class MusicOrganizer
         }
     }
     
-    public void listAllFile(int index)
+    public void listAllFile()
     {
+        int num = 0;
         for(String filename : files) {
-            System.out.println(filename);
+            num = num + 1;
+            System.out.println(num + ". " + filename);
         }
     }
     
