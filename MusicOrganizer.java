@@ -53,6 +53,13 @@ public class MusicOrganizer
         }
     }
     
+    public void listAllFile(int index)
+    {
+        for(String filename : files) {
+            System.out.println(filename);
+        }
+    }
+    
     /**
      * Remove a file from the collection.
      * @param index The index of the file to be removed.
