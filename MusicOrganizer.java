@@ -102,7 +102,15 @@ public class MusicOrganizer
         }
         
         if (musica == false){
-            System.out.println("error, el "+filename+" no esta en el sistema");
+            System.out.println("error, nomrbe no esta en el sistema");
+        }
+    }
+    
+    public void playSamplesArtist(String busqueda) {
+        for(String file : files) {
+            if(file.contains(busqueda)) {
+                player.playSample(file);
+            }
         }
     }
 }
