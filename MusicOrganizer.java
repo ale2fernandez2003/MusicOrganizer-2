@@ -102,7 +102,7 @@ public class MusicOrganizer
         }
         
         if (musica == false){
-            System.out.println("error");
+            System.out.println("error, el "+filename+" no esta en el sistema");
         }
     }
 }
