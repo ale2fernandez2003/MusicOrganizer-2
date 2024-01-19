@@ -91,4 +91,18 @@ public class MusicOrganizer
     {
         player.stop();
     }
+    
+    public void listMatching(String searchString){
+        boolean musica = false;
+        for (String filename : files){
+            if(filename.contains(searchString)){
+                System.out.println(filename);
+                musica = true;
+            }
+        }
+        
+        if (musica == false){
+            System.out.println("error");
+        }
+    }
 }
