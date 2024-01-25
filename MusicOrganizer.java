@@ -55,10 +55,11 @@ public class MusicOrganizer
     
     public void listAllFile()
     {
-        int num = 0;
-        for(String filename : files) {
-            num = num + 1;
-            System.out.println(num + ". " + filename);
+        int index = 0;
+        while(index < files.size()) {
+            String filename = files.get(index);
+            System.out.println(filename);
+            index++;
         }
     }
     
